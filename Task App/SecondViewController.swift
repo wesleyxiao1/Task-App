@@ -28,6 +28,8 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
             // task title is blank, do not add a record
         } else {
             // add record
+            //print(txtTask.text)
+            //print(txtDesc.text)
             taskMgr.addTask(name: txtTask.text!, desc: txtDesc.text!)
             
             // dismiss keyboard and reset fields

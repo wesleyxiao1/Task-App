@@ -20,5 +20,6 @@ class TaskManager: NSObject {
     
     func addTask(name: String, desc: String) {
         tasks.append(task(name: name, desc: desc))
+        print(tasks)
     }
 }

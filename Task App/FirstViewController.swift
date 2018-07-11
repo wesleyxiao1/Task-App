@@ -13,7 +13,14 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet var tblTasks : UITableView!
     
     override func viewDidLoad() {
+        print("viewdidload called")
         super.viewDidLoad()
+        tblTasks.reloadData()
+    }
+    
+    // use this function to update tableview after adding new tasks
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tblTasks.reloadData()
     }
 
@@ -27,6 +34,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("callforrowat called")
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Default Tasks")
         
         cell.textLabel?.text = taskMgr.tasks[indexPath.row].name
