@@ -13,6 +13,7 @@
 		2B56BFF520F67DB300EAA09D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B56BFF320F67DB300EAA09D /* Main.storyboard */; };
 		2B56BFF720F67DB600EAA09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B56BFF620F67DB600EAA09D /* Assets.xcassets */; };
 		2B56BFFA20F67DB600EAA09D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B56BFF820F67DB600EAA09D /* LaunchScreen.storyboard */; };
+		2B56C00220F67E4A00EAA09D /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56C00120F67E4A00EAA09D /* TaskManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2B56BFF620F67DB600EAA09D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B56BFF920F67DB600EAA09D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B56BFFB20F67DB600EAA09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B56C00120F67E4A00EAA09D /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2B56BFF620F67DB600EAA09D /* Assets.xcassets */,
 				2B56BFF820F67DB600EAA09D /* LaunchScreen.storyboard */,
 				2B56BFFB20F67DB600EAA09D /* Info.plist */,
+				2B56C00120F67E4A00EAA09D /* TaskManager.swift */,
 			);
 			path = "Task App";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				2B56BFF220F67DB300EAA09D /* SecondViewController.swift in Sources */,
 				2B56BFEE20F67DB300EAA09D /* AppDelegate.swift in Sources */,
+				2B56C00220F67E4A00EAA09D /* TaskManager.swift in Sources */,
 				2B56BFF020F67DB300EAA09D /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LSQD23HWGY;
 				INFOPLIST_FILE = "Task App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LSQD23HWGY;
 				INFOPLIST_FILE = "Task App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
