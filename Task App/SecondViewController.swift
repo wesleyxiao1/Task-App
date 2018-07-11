@@ -8,8 +8,11 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-
+class SecondViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet var txtTask: UITextField!
+    @IBOutlet var txtDesc: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,27 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func btnAddTask(sender : UIButton) {
+        if(txtTask.text == "") {
+            // task title is blank, do not add a record
+        } else {
+            // add record
+            taskMgr.addTask(name: txtTask.text!, desc: txtDesc.text!)
+            
+            // dismiss keyboard and reset fields
+            self.view.endEditing(true)
+            txtTask.text = nil
+            txtDesc.text = nil
+        }
+    }
+    
+    func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
 
