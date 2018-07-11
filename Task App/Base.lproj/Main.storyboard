@@ -38,6 +38,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasks" image="list25x25" landscapeImage="list25x25" largeContentSizeImage="list25x25" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tblTasks" destination="Zds-iS-6d0" id="1WU-qb-prE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
